@@ -2,7 +2,9 @@
 	'use strict';
 
 	angular
-		.bootstrap(document.documentElement, ['app']);
+		.bootstrap(document.documentElement, ['app'], {
+			strictDi: true
+		});
 
 	window.onerror = function onError(msg, url, line, col, error) {
 		var suppressErrorAlert = true;

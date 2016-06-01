@@ -14,6 +14,8 @@
 			link: link
 		};
 
+		return ddo;
+
 		function link(scope, element) {
 			element.on('click', function() {
 				var top = 0;
@@ -44,7 +46,6 @@
 			}
 		}
 
-		return ddo;
 	}
 
 })();
