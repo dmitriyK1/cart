@@ -9,6 +9,6 @@
 
 	angular
 		.module('app.cart')
-		.component('cartComponent', CartComponent);
+		.component('cart', CartComponent);
 
 })();

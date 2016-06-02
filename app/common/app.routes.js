@@ -14,11 +14,11 @@
 		$stateProvider
 			.state('shop', {
 				url: '/',
-				template: '<shop-component></shop-component>'
+				template: '<shop></shop>'
 			})
 			.state('cart', {
 				url: '/cart',
-				template: '<cart-component></cart-component>'
+				template: '<cart></cart>'
 			});
 	}
 

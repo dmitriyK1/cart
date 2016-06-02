@@ -8,7 +8,7 @@
 
 	angular
 		.module('app.shop')
-		.component('shopComponent', ShopComponent);
+		.component('shop', ShopComponent);
 
 
 })();

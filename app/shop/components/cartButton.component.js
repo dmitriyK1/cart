@@ -2,13 +2,13 @@
 	'use strict';
 
 	var CartbtnComponent = {
-		templateUrl: 'app/shop/components/cartBtn.component.html',
+		templateUrl: 'app/shop/components/cartButton.component.html',
 		controller: 'CartbtnController',
 		controllerAs: 'cartbtnController'
 	};
 
 	angular
 		.module('app.widgets')
-		.component('cartbtnComponent', CartbtnComponent);
+		.component('cartButton', CartbtnComponent);
 
 })();

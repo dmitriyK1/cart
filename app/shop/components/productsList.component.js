@@ -13,6 +13,6 @@
 
 	angular
 		.module('app.shop')
-		.component('productsListComponent', ProductsListComponent);
+		.component('productsList', ProductsListComponent);
 
 })();
