@@ -14,8 +14,7 @@
 				activeCategory: '=category'
 			},
 			templateUrl: 'app/shop/directives/sidebar.directive.html',
-			controller: 'SidebarController',
-			controllerAs: 'sidebarController',
+			controller: 'SidebarController as sidebarController',
 			link: link,
 			bindToController: true
 		};

@@ -7,8 +7,7 @@
 			category: '@'
 		},
 		templateUrl: 'app/shop/components/productsList.component.html',
-		controller: 'ProductsListController',
-		controllerAs: 'productsListController'
+		controller: 'ProductsListController as productsListController'
 	};
 
 	angular
