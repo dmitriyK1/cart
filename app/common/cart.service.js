@@ -1,14 +1,14 @@
 (function() {
 	'use strict';
 
-	cartService.$inject = ["$rootScope"];
+	cartService.$inject = ["$rootScope", "$q"];
 
 	angular
 		.module('app')
 		.factory('cartService', cartService);
 
 	/* @ngInject */
-	function cartService($rootScope) {
+	function cartService($rootScope, $q) {
 		var orderedProducts = [];
 
 		var service = {
@@ -20,7 +20,9 @@
 		return service;
 
 		function getProducts() {
-			return orderedProducts;
+			var deferred = $q.defer();
+			deferred.resolve(orderedProducts);
+			return deferred.promise;
 		}
 
 		function addProduct(product) {
