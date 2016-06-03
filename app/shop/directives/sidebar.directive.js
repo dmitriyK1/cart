@@ -23,6 +23,12 @@
 
 		function link(scope, element) {
 			element.on('click', onClick);
+
+			scope.$on('$destroy', onScopeDestroy);
+
+			function onScopeDestroy() {
+				element.off('click');
+			}
 		}
 
 		function onClick(e) {
