@@ -1,15 +1,16 @@
 (function() {
 	'use strict';
 
-	configure.$inject = ['$httpProvider'];
+	configure.$inject = ['$httpProvider', '$compileProvider'];
 
 	angular
 		.module('app')
 		.config(configure);
 
 	// @ngInject
-	function configure($httpProvider) {
-		$httpProvider.defaults.cache = true;
+	function configure($httpProvider, $compileProvider) {
+		$httpProvider.defaults.cache      = true;
+		$compileProvider.debugInfoEnabled = false;
 	}
 
 })();
