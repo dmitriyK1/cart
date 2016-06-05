@@ -3,7 +3,7 @@
 
 	var OrdersComponent = {
 		templateUrl: 'app/cart/components/orders.component.html',
-		controller: 'OrdersController as ordersController'
+		controller: 'OrdersController'
 	};
 
 	angular

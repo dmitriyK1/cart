@@ -2,7 +2,7 @@
 	'use strict';
 	var ShopComponent = {
 		templateUrl: 'app/shop/views/shop.view.html',
-		controller: 'ShopController as shopController'
+		controller: 'ShopController'
 	}
 
 	angular

@@ -3,7 +3,7 @@
 
 	var CartComponent = {
 		templateUrl: 'app/cart/views/cart.view.html',
-		controller: 'CartController as cartController'
+		controller: 'CartController'
 	};
 
 	angular

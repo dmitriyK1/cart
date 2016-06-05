@@ -3,11 +3,11 @@
 
 	var ProductsListComponent = {
 		bindings: {
-			search: '<',
-			category: '<'
+			search: '@',
+			category: '@'
 		},
 		templateUrl: 'app/shop/components/productsList.component.html',
-		controller: 'ProductsListController as productsListController'
+		controller: 'ProductsListController'
 	};
 
 	angular

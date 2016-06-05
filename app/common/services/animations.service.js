@@ -13,7 +13,7 @@
 		return service;
 
 		function initialize() {
-			new WOW().init();
+			// new WOW().init();
 		}
 	}
 })();

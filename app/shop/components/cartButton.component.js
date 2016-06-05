@@ -3,7 +3,7 @@
 
 	var CartbtnComponent = {
 		templateUrl: 'app/shop/components/cartButton.component.html',
-		controller: 'CartbtnController as cartbtnController'
+		controller: 'CartbtnController'
 	};
 
 	angular
