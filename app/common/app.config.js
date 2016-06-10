@@ -9,7 +9,8 @@
 
 	// @ngInject
 	function configure($httpProvider, $compileProvider) {
-		$httpProvider.defaults.cache      = true;
+		$httpProvider.defaults.cache = true;
+		$httpProvider.useApplyAsync(true);
 		$compileProvider.debugInfoEnabled(false);
 	}
 
